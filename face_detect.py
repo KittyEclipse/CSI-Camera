@@ -44,10 +44,10 @@ def gstreamer_pipeline(
 def face_detect():
     window_title = "Face Detect"
     face_cascade = cv2.CascadeClassifier(
-        "/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml"
+        "/usr/local/share/opencv4/haarcascades/haarcascade_frontalface_default.xml"
     )
     eye_cascade = cv2.CascadeClassifier(
-        "/usr/share/opencv4/haarcascades/haarcascade_eye.xml"
+        "/usr/local/share/opencv4/haarcascades/haarcascade_eye.xml"
     )
     video_capture = cv2.VideoCapture(gstreamer_pipeline(), cv2.CAP_GSTREAMER)
     if video_capture.isOpened():
